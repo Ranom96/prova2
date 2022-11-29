@@ -46,5 +46,16 @@ listarPorCategoria(eletronico);
 listarPorCategoria(escola);
 
 
+function listarPorValor(min, max) {
+    
+    for (let i = 0; i < produtos.length; i++) {
+        if (produtos[i].valor >= min && produtos[i].valor <= max) {
+            console.log(produtos[i])
+        }
+    }
+} 
 
+listarPorValor(0, 1000)
+listarPorValor(0, 10)
+listarPorValor(1000, 2000)
 
